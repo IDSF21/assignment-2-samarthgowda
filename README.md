@@ -2,6 +2,8 @@
 
 ## Link to Visualization
 
+[https://share.streamlit.io/samarthgowda/assignment-2-samarthgowda/main/main.py](https://share.streamlit.io/samarthgowda/assignment-2-samarthgowda/main/main.py)
+
 ## Project Description & Goals
 
 This project was looking to understand how music has changed over time. The dataset that was chosen for this project came from [Kaggle](https://www.kaggle.com/ektanegi/spotifydata-19212020) and it was information for over 169k songs collected from the Spotify Web API. The question this application is aiming to answer is **What aspects of music have changed over the last century (from 1921-2020)?** The goals of this project are to understand the answer to this question and to create visualizations that help future users of this application find their own answers to this question.
