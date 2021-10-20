@@ -51,7 +51,7 @@ songs_agg = calculate_songs_agg(songs)
 
 with st.container():
     """
-    # Songs from 1921-2020 
+    # 🎶 How Music has Changed from 1921-2020 
 
     Information about these songs are from Spotify Web API. Dataset provided from [Kaggle](https://www.kaggle.com/ektanegi/spotifydata-19212020).
     """
@@ -66,7 +66,9 @@ with st.container():
 
 with st.container():
     """
-    ### Understanding how different aspects of songs have changed over time
+    ### 📅 Understanding how different aspects of songs have changed over time
+
+    Overtime, song attributes have changed a lot. Take a look at how certain attributes are very similar overtime from 1921 to 2020 and how other attributes change drastically over the last century.
     """
 
     overall_variable_select = st.selectbox(
@@ -100,7 +102,9 @@ with st.container():
 
 with st.container():
     """
-    ### Understanding the distribution of aspects of songs for a given release year range
+    ### 🔊 Understanding the distribution of aspects of songs for a given release year range
+
+    Select a start year, end year, and a song attribute and observe the distribution of the song attribute's distribution over the date range. There are interesting differences between certain attributes as you change the start and end years.
     """
 
     col1, col2 = st.columns(2)
@@ -139,7 +143,7 @@ with st.container():
 
         fig, ax = plt.subplots()
         ax.hist(songs_data[year_variable_select])
-        ax.set_xlabel(f"Release Year from {start_year} to {end_year}")
-        ax.set_ylabel(overall_variable_select)
-        ax.set_title(f"Histogram of {overall_variable_select} for Spotify Song Data {start_year} to {end_year}")
+        ax.set_ylabel(f"Frequency")
+        ax.set_xlabel(year_variable_select)
+        ax.set_title(f"Frequency of {year_variable_select} for Spotify Song Data {start_year} to {end_year}")
         st.pyplot(fig)
